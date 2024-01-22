@@ -1,0 +1,9 @@
+.chat-wrapper {
+    max-width: calc(100% - 5rem);
+    max-height: calc(100% - 5rem);
+}
+
+.chat-display {
+    background-color: var(--testcolor);
+    width: 75%;
+}

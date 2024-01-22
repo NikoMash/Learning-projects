@@ -1,0 +1,16 @@
+.btn {
+    padding: 0.5rem;
+    border: 1px solid transparent;
+    border-radius: 0.25rem;
+    cursor: pointer;
+    font: 400 1rem 'Source Sans Pro', sans-serif;
+    transition: background-color 50ms;
+}
+.btn-primary {
+    color: white;
+    background-color: #375BDC;
+
+    &:hover {
+        background-color: #5875db;
+    }
+}

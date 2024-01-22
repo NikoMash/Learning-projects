@@ -1,0 +1,119 @@
+@import url("https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@400;600&display=swap");
+/* line 2, users/static/scss/base.scss */
+body {
+  margin: 0;
+  font: 600 18px 'Source Sans Pro', sans-serif;
+  letter-spacing: 0.64px;
+  color: #585d74; }
+
+/* line 8, users/static/scss/base.scss */
+.topnav {
+  background-color: #375BDC;
+  color: #ffffff;
+  padding: 10px; }
+
+/* line 13, users/static/scss/base.scss */
+.topnav a:link, .topnav a:visited {
+  text-decoration: none;
+  color: #ffffff; }
+
+/* line 17, users/static/scss/base.scss */
+.topnav a:hover, .topnav a:active {
+  text-decoration: underline; }
+
+/* line 20, users/static/scss/base.scss */
+.mycard {
+  background-color: var(--containerBG);
+  background-image: linear-gradient(to bottom, #375BDC, #4D70EF);
+  background-size: 100% 120px;
+  background-repeat: no-repeat;
+  margin: 40px auto;
+  width: 350px;
+  border-radius: 5px;
+  box-shadow: 0 5px 7px -1px rgba(51, 51, 51, 0.23);
+  padding: 20px; }
+
+/* line 31, users/static/scss/base.scss */
+.mycard h1 {
+  text-align: center;
+  color: #ffffff;
+  margin: 20px 0 60px 0; }
+
+/* line 36, users/static/scss/base.scss */
+ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0; }
+
+/* line 41, users/static/scss/base.scss */
+li {
+  background-color: #ffffff;
+  background-image: linear-gradient(to right, #375BDC, #4D70EF);
+  background-size: 50px 60px;
+  background-repeat: no-repeat;
+  cursor: pointer;
+  transition: transform .25s;
+  border-radius: 5px;
+  box-shadow: 0 5px 7px -1px rgba(51, 51, 51, 0.23);
+  padding: 15px;
+  padding-left: 70px;
+  margin-top: 5px; }
+
+/* line 54, users/static/scss/base.scss */
+li:hover {
+  transform: scale(1.1); }
+
+/* line 57, users/static/scss/base.scss */
+a:link, a:visited {
+  color: #375BDC; }
+
+/* line 60, users/static/scss/base.scss */
+.main, .main h1 {
+  text-align: center;
+  color: #375BDC; }
+
+/* line 1, users/static/scss/buttons.scss */
+.btn {
+  padding: 0.5rem;
+  border: 1px solid transparent;
+  border-radius: 0.25rem;
+  cursor: pointer;
+  font: 400 1rem 'Source Sans Pro', sans-serif;
+  transition: background-color 50ms; }
+
+/* line 9, users/static/scss/buttons.scss */
+.btn-primary {
+  color: white;
+  background-color: var(--primaryColor); }
+  /* line 13, users/static/scss/buttons.scss */
+  .btn-primary:hover {
+    background-color: var(--primaryLight); }
+
+/* line 1, users/static/scss/chat.scss */
+.chat-wrapper {
+  max-width: calc(100% - 30rem);
+  max-height: calc(100% - 10rem);
+  margin: auto; }
+
+/* line 7, users/static/scss/chat.scss */
+.chat-display {
+  position: relative;
+  background-color: var(--containerBG);
+  border-radius: 1.5rem;
+  border: 5px solid var(--primaryColor);
+  width: 100%;
+  height: calc(100% - 10rem); }
+  /* line 15, users/static/scss/chat.scss */
+  .chat-display input {
+    border: 1px solid var(--primaryColor);
+    position: absolute;
+    bottom: 0rem;
+    margin: 0% 10%;
+    width: 100%; }
+
+/* line 1, users/static/scss/vars.scss */
+:root {
+  --containerBG: #f1f1f1;
+  --primaryColor: #375BDC;
+  --primaryLight: #5875db;
+  --testcolor: red; }

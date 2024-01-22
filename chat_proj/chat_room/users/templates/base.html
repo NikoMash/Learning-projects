@@ -1,0 +1,23 @@
+{% load static %}
+{% load compress %}
+{% compress css %}
+<link type="text/x-scss" rel="stylesheet" href="{% static 'master.scss' %}"> 
+{% endcompress %} 
+<!DOCTYPE html>
+<html>
+<head>
+  <title>{% block title %}{% endblock %}</title>
+</head>
+<body>
+
+    <div class="topnav">
+        <a href="/">HOME</a> |
+        <a href="/users">USERS</a> |
+        <a href="/admin">ADMIN</a>
+    </div>
+
+{% block content %}
+{% endblock %}
+
+</body>
+</html>
