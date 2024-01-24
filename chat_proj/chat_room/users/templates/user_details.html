@@ -9,5 +9,6 @@
 <div class="mycard">
     <h1>{{ myuser.firstname }} {{ myuser.lastname }}</h1>
     <p>User since: {{ myuser.joined_date }}</p>
+    <p>{{ myuser.username }} has been a user for: {{ myuser.user_since.days }} days</p>
 </div>
 {% endblock %}

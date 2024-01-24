@@ -8,9 +8,9 @@
 }
 .btn-primary {
     color: white;
-    background-color: #375BDC;
+    background-color: var(--primaryColor);
 
     &:hover {
-        background-color: #5875db;
+        background-color: var(--primaryLight);
     }
 }

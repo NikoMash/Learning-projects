@@ -1,9 +1,13 @@
 .chat-wrapper {
-    max-width: calc(100% - 5rem);
-    max-height: calc(100% - 5rem);
+    max-width: calc(100% - 30rem);
+    max-height: calc(100% - 10rem);
+    margin: auto;
 }
 
 .chat-display {
-    background-color: var(--testcolor);
-    width: 75%;
+    background-color: var(--containerBG);
+    border-radius: 1.5rem;
+    border: 5px solid var(--primaryColor);
+    width: 100%;
+    height: calc(100% - 10rem);
 }

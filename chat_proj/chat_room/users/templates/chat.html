@@ -1,4 +1,9 @@
 {% extends "base.html" %}
+{% load static %}
+
+{% block script %}
+<script src="{% static 'js/chat.js' %}"></script>
+{% endblock %}
 
 {% block title %}
 Chat room
@@ -8,8 +13,14 @@ Chat room
     <h1>Welcome to the Chat-Room!</h1>
 </div>
 <div class="chat-wrapper">
+    <button id="openCreatorBtn" type="button" class="btn btn-primary">Post</button>
+    <div id="postModal" class="modal">
+        <div class="modal-content">
+            <span class="close">X</span>
+            <p>Info!</p>
+        </div>
+    </div>
     <div class="chat-display">
-        <input type="text">
     </div>
 </div>
 {% endblock %}

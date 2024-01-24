@@ -1,6 +1,9 @@
 from django.http import HttpResponse
 from django.template import loader
-from .models import User
+from .models.user import User
+import logging
+
+logger = logging.getLogger("django")
 
 def users(request):
   myusers = User.objects.all().values()
@@ -16,6 +19,7 @@ def user_details(request, id):
   context = {
     'myuser': myuser,
   }
+  logger.info(myuser.user_since())
   return HttpResponse(template.render(context, request))
 
 def home(request):

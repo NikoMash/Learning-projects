@@ -5,19 +5,9 @@
 }
 
 .chat-display {
-    position: relative;
     background-color: var(--containerBG);
     border-radius: 1.5rem;
     border: 5px solid var(--primaryColor);
     width: 100%;
     height: calc(100% - 10rem);
-
-    input {
-        border: 1px solid var(--primaryColor);
-        position: absolute;
-        bottom: -1px;
-        margin: 0% 15%;
-        height: 5rem;
-        width: 70%;
-    }
 }
